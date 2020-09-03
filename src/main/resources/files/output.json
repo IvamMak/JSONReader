@@ -1,0 +1,12 @@
+{
+  "type":"search","results":[
+  {
+    "criteria":{"lastName":"Petrov"},
+    "results":[
+      {
+        "lastName":"Petrov","name":"Ivan"
+      }
+    ]
+  }
+]
+}
