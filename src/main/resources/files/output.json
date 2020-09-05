@@ -1,12 +1,67 @@
 {
-  "type":"search","results":[
-  {
-    "criteria":{"lastName":"Petrov"},
-    "results":[
-      {
-        "lastName":"Petrov","name":"Ivan"
-      }
-    ]
-  }
-]
+  "type": "search",
+  "results": [
+    {
+      "criteria": {
+        "lastName": "Petrov"
+      },
+      "results": [
+        {
+          "lastName": "Petrov",
+          "name": "Ivan"
+        }
+      ]
+    },
+    {
+      "criteria": {
+        "minTimes": 1,
+        "productName": "Сахар"
+      },
+      "results": [
+        {
+          "lastName": "Martin",
+          "name": "Bob"
+        },
+        {
+          "lastName": "Bedelia",
+          "name": "Bonnie"
+        },
+        {
+          "lastName": "Godunov",
+          "name": "Alexander"
+        }
+      ]
+    },
+    {
+      "criteria": {
+        "minExpress": 100000,
+        "maxExpress": 150000
+      },
+      "results": [
+        {
+          "lastName": "Martin",
+          "name": "Bob"
+        }
+      ]
+    },
+    {
+      "criteria": {
+        "badCustomers": 3
+      },
+      "results": [
+        {
+          "lastName": "Shigeta",
+          "name": "James"
+        },
+        {
+          "lastName": "Bochner",
+          "name": "Hart"
+        },
+        {
+          "lastName": "Willis",
+          "name": "Bruce"
+        }
+      ]
+    }
+  ]
 }

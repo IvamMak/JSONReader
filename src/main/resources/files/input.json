@@ -1,5 +1,8 @@
 {
   "criterias": [
-    {"lastName": "Petrov"}
+    {"lastName": "Petrov"},
+    {"productName": "Сахар", "minTimes": 1},
+    {"minExpress": 100000, "maxExpress": 150000},
+    {"badCustomers": 3}
   ]
 }
