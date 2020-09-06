@@ -2,9 +2,7 @@ package ru.makarovie.requestStrategy;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import ru.makarovie.inputKeys.*;
-
-import java.sql.Connection;
+import ru.makarovie.keyWorker.*;
 
 public class SearchRequestStrategy implements RequestStrategy {
     private JSONArray request;

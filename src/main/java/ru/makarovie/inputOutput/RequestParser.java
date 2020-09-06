@@ -1,4 +1,4 @@
-package ru.makarovie;
+package ru.makarovie.inputOutput;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

@@ -58,20 +58,12 @@
     },
     {
       "criteria": {
-        "badCustomers": 3
+        "badCustomers": "gfdg"
       },
       "results": [
         {
-          "lastName": "Shigeta",
-          "name": "James"
-        },
-        {
-          "lastName": "Bochner",
-          "name": "Hart"
-        },
-        {
-          "lastName": "Willis",
-          "name": "Bruce"
+          "type": "error",
+          "message": "поле badCustomers может иметь только целочисленное значение, а также не должно содержать знака ковычек"
         }
       ]
     }

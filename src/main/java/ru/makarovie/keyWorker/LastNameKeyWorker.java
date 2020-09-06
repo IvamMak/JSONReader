@@ -1,4 +1,4 @@
-package ru.makarovie.inputKeys;
+package ru.makarovie.keyWorker;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;

@@ -1,13 +1,5 @@
 package ru.makarovie.db;
 
-import org.json.simple.JSONObject;
-import org.json.simple.parser.ParseException;
-import ru.makarovie.RequestParser;
-import ru.makarovie.requestStrategy.RequestStrategy;
-import ru.makarovie.requestStrategy.SearchRequestStrategy;
-
-import java.io.FileWriter;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -33,20 +25,5 @@ public class JdbcConnector {
 
     private JdbcConnector (){
         throw new UnsupportedOperationException();
-    }
-
-    public static void main(String[] args) throws SQLException, IOException, ParseException {
-        RequestParser requestParser = new RequestParser("src\\main\\resources\\files\\input.json");
-        JSONObject jsonRequest = requestParser.getJsonObjectWithRequest();
-
-        RequestStrategy requestStrategy = new SearchRequestStrategy(jsonRequest);
-
-        JSONObject jsonObject = requestStrategy.getJsonObjectWithDataFromDb();
-
-        FileWriter fileWriter = new FileWriter("src\\main\\resources\\files\\output.json");
-        fileWriter.write(jsonObject.toJSONString());
-        fileWriter.close();
-
-        System.out.println(jsonObject);
     }
 }
