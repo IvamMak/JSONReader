@@ -28,7 +28,7 @@ public class CustomerByProductNameAndMinTimes {
                         "INNER JOIN purchase p ON customer.id = p.customer_id " +
                         "INNER JOIN product ON p.products = product.id " +
                         "WHERE product_name = ? " +
-                        "GROUP BY customer.id HAVING count(*) > ?");
+                        "GROUP BY customer.id HAVING count(*) >= ?");
 
         pstate.setObject(1, productName);
         pstate.setObject(2, minTimes);

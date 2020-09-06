@@ -3,18 +3,18 @@
   "results": [
     {
       "criteria": {
-        "lastName": "Petrov"
+        "lastName": "Петров"
       },
       "results": [
         {
-          "lastName": "Petrov",
-          "name": "Ivan"
+          "lastName": "Петров",
+          "name": "Иван"
         }
       ]
     },
     {
       "criteria": {
-        "minTimes": 1,
+        "minTimes": 2,
         "productName": "Сахар"
       },
       "results": [
@@ -34,13 +34,25 @@
     },
     {
       "criteria": {
-        "minExpress": 100000,
+        "minExpress": 1000,
         "maxExpress": 150000
       },
       "results": [
         {
+          "lastName": "Bedelia",
+          "name": "Bonnie"
+        },
+        {
           "lastName": "Martin",
           "name": "Bob"
+        },
+        {
+          "lastName": "Gleason",
+          "name": "Paul"
+        },
+        {
+          "lastName": "Petrov",
+          "name": "Ivan"
         }
       ]
     },

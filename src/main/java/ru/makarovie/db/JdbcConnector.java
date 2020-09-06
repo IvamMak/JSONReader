@@ -36,45 +36,12 @@ public class JdbcConnector {
     }
 
     public static void main(String[] args) throws SQLException, IOException, ParseException {
-        Connection connection = JdbcConnector.getConnection();
         RequestParser requestParser = new RequestParser("src\\main\\resources\\files\\input.json");
         JSONObject jsonRequest = requestParser.getJsonObjectWithRequest();
 
-        RequestStrategy requestStrategy = new SearchRequestStrategy(connection, jsonRequest);
+        RequestStrategy requestStrategy = new SearchRequestStrategy(jsonRequest);
 
         JSONObject jsonObject = requestStrategy.getJsonObjectWithDataFromDb();
-
-/*        PreparedStatement pstate = connection.prepareStatement("SELECT * FROM customer WHERE customer.name = ?");
-
-        JSONArray request = (JSONArray) jsonRequest.get("Customers");
-
-        String reqName = null;
-
-        for (int i = 0; i < request.size(); i++){
-            JSONObject jsonObject = (JSONObject) request.get(i);
-            System.out.println(jsonObject.toString());
-            reqName = (String) jsonObject.get("name");
-        }
-
-
-        System.out.println(jsonRequest.toJSONString());
-        System.out.println((String) jsonRequest.get("name"));
-
-        pstate.setObject(1, reqName);
-
-        JSONObject jsonObject = new JSONObject();
-        JSONArray jsonArray = new JSONArray();
-
-        ResultSet resultSet = pstate.executeQuery();
-
-        while (resultSet.next()){
-            JSONObject result = new JSONObject();
-            result.put("name", resultSet.getString("name"));
-            result.put("secondName", resultSet.getString("second_name"));
-            Files.write(Paths.get("src\\main\\resources\\files\\output.json"), result.toJSONString().getBytes());
-            jsonArray.add(result);
-        }
-        jsonObject.put("Customers", jsonArray);*/
 
         FileWriter fileWriter = new FileWriter("src\\main\\resources\\files\\output.json");
         fileWriter.write(jsonObject.toJSONString());

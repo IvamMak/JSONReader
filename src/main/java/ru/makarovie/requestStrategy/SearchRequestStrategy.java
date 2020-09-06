@@ -7,7 +7,6 @@ import ru.makarovie.inputKeys.*;
 import java.sql.Connection;
 
 public class SearchRequestStrategy implements RequestStrategy {
-    private Connection connection;
     private JSONArray request;
     private JSONObject result = new JSONObject();
     private KeyWorker keyWorker;
@@ -50,8 +49,7 @@ public class SearchRequestStrategy implements RequestStrategy {
         return tempObject;
     }
 
-    public SearchRequestStrategy(Connection connection, JSONObject request) {
-        this.connection = connection;
+    public SearchRequestStrategy(JSONObject request) {
         this.request = (JSONArray) request.get("criterias");
     }
 }

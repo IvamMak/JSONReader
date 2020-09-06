@@ -12,10 +12,10 @@ abstract class ResultSetTool {
         JSONArray resultArray = new JSONArray();
 
         while (resultSet.next()) {
-            JSONObject customersWithLastName = new JSONObject();
-            customersWithLastName.put("name", resultSet.getString("name"));
-            customersWithLastName.put("lastName", resultSet.getString("second_name"));
-            resultArray.add(customersWithLastName);
+            JSONObject customers = new JSONObject();
+            customers.put("name", resultSet.getString("name"));
+            customers.put("lastName", resultSet.getString("second_name"));
+            resultArray.add(customers);
         }
         return resultArray;
     }
