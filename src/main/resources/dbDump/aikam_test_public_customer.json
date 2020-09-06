@@ -1,0 +1,57 @@
+[
+  {
+    "id": 2,
+    "name": "Bob",
+    "second_name": "Martin"
+  },
+  {
+    "id": 3,
+    "name": "Ivan",
+    "second_name": "Petrov"
+  },
+  {
+    "id": 4,
+    "name": "Bruce",
+    "second_name": "Willis"
+  },
+  {
+    "id": 5,
+    "name": "Alan",
+    "second_name": "Rickman"
+  },
+  {
+    "id": 6,
+    "name": "Bonnie",
+    "second_name": "Bedelia"
+  },
+  {
+    "id": 7,
+    "name": "Paul",
+    "second_name": "Gleason"
+  },
+  {
+    "id": 8,
+    "name": "William",
+    "second_name": "Atherton"
+  },
+  {
+    "id": 9,
+    "name": "Hart",
+    "second_name": "Bochner"
+  },
+  {
+    "id": 10,
+    "name": "James",
+    "second_name": "Shigeta"
+  },
+  {
+    "id": 11,
+    "name": "Alexander",
+    "second_name": "Godunov"
+  },
+  {
+    "id": 12,
+    "name": "Иван",
+    "second_name": "Петров"
+  }
+]

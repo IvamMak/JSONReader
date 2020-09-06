@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "product_name": "Хлеб",
+    "cost": 22
+  },
+  {
+    "id": 2,
+    "product_name": "Чай",
+    "cost": 228
+  },
+  {
+    "id": 3,
+    "product_name": "Сахар",
+    "cost": 265
+  },
+  {
+    "id": 4,
+    "product_name": "Кофе",
+    "cost": 529
+  },
+  {
+    "id": 5,
+    "product_name": "Масло",
+    "cost": 537
+  },
+  {
+    "id": 6,
+    "product_name": "Детское питание",
+    "cost": 778
+  },
+  {
+    "id": 7,
+    "product_name": "Кленовый сироп",
+    "cost": 475
+  },
+  {
+    "id": 8,
+    "product_name": "Суп",
+    "cost": 126
+  },
+  {
+    "id": 9,
+    "product_name": "Паштет",
+    "cost": 111
+  },
+  {
+    "id": 10,
+    "product_name": "Тушёнка",
+    "cost": 231
+  },
+  {
+    "id": 11,
+    "product_name": "iPhone",
+    "cost": 100000
+  }
+]

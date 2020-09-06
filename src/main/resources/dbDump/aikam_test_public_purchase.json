@@ -1,0 +1,200 @@
+[
+  {
+    "id": 2,
+    "customer_id": 2,
+    "products": 1,
+    "purchase_date": "2020-09-01"
+  },
+  {
+    "id": 3,
+    "customer_id": 2,
+    "products": 2,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 4,
+    "customer_id": 2,
+    "products": 3,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 5,
+    "customer_id": 3,
+    "products": 4,
+    "purchase_date": "2020-09-01"
+  },
+  {
+    "id": 6,
+    "customer_id": 3,
+    "products": 5,
+    "purchase_date": "2020-09-01"
+  },
+  {
+    "id": 7,
+    "customer_id": 3,
+    "products": 6,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 8,
+    "customer_id": 4,
+    "products": 7,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 9,
+    "customer_id": 4,
+    "products": 8,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 10,
+    "customer_id": 4,
+    "products": 9,
+    "purchase_date": "2020-09-04"
+  },
+  {
+    "id": 11,
+    "customer_id": 5,
+    "products": 10,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 12,
+    "customer_id": 5,
+    "products": 1,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 13,
+    "customer_id": 5,
+    "products": 2,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 14,
+    "customer_id": 6,
+    "products": 3,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 30,
+    "customer_id": 6,
+    "products": 4,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 31,
+    "customer_id": 6,
+    "products": 5,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 32,
+    "customer_id": 7,
+    "products": 6,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 33,
+    "customer_id": 7,
+    "products": 7,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 34,
+    "customer_id": 7,
+    "products": 8,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 35,
+    "customer_id": 8,
+    "products": 9,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 36,
+    "customer_id": 8,
+    "products": 2,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 37,
+    "customer_id": 8,
+    "products": 3,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 38,
+    "customer_id": 9,
+    "products": 5,
+    "purchase_date": "2020-09-01"
+  },
+  {
+    "id": 39,
+    "customer_id": 9,
+    "products": 9,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 40,
+    "customer_id": 10,
+    "products": 1,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 41,
+    "customer_id": 11,
+    "products": 2,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 42,
+    "customer_id": 11,
+    "products": 3,
+    "purchase_date": "2020-09-01"
+  },
+  {
+    "id": 43,
+    "customer_id": 10,
+    "products": 2,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 44,
+    "customer_id": 11,
+    "products": 3,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 45,
+    "customer_id": 11,
+    "products": 1,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 46,
+    "customer_id": 2,
+    "products": 3,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 50,
+    "customer_id": 6,
+    "products": 3,
+    "purchase_date": "2020-09-03"
+  },
+  {
+    "id": 51,
+    "customer_id": 6,
+    "products": 3,
+    "purchase_date": "2020-09-02"
+  },
+  {
+    "id": 52,
+    "customer_id": 2,
+    "products": 11,
+    "purchase_date": "2020-09-04"
+  }
+]
