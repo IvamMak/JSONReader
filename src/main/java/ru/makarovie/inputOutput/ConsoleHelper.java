@@ -11,7 +11,7 @@ public abstract class ConsoleHelper {
 
     public static String getTypeOfOperation() {
         String operationType = "";
-        System.out.println("Введите тип операции");
+        System.out.println("Enter type of operation");
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             operationType = reader.readLine();
@@ -23,7 +23,7 @@ public abstract class ConsoleHelper {
 
     public static String getInputFile() {
         String inputFile = "";
-        System.out.println("Введите адрес файла с входными данными");
+        System.out.println("Enter file address with input data or exit for closing program");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true){
@@ -32,11 +32,13 @@ public abstract class ConsoleHelper {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            if (Files.exists(Paths.get(inputFile)))
+            if (Files.exists(Paths.get(inputFile))) {
                 break;
+            }
+            if (inputFile.equals("exit")) System.exit(0);
             else {
-                System.out.println("Файл не существует");
-                System.out.println("Введите адрес файла с входными данными");
+                System.out.println("File not exist");
+                System.out.println("Enter file address with input data or exit for closing program");
             }
         }
         return inputFile;

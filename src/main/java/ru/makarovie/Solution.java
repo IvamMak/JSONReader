@@ -25,7 +25,7 @@ public class Solution {
         } else if (typeOfOperation.equals("search")) {
             requestStrategy = new SearchRequestStrategy(jsonRequest);
         } else {
-            System.out.println("Неверный тип операции (допустимые типы: stat, search)");
+            System.out.println("Not correct type of operation (types: stat, search)");
         }
 
         if (requestStrategy != null) {
