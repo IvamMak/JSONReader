@@ -36,6 +36,6 @@ public class CustomerByProductNameAndMinTimes {
         ResultSet resultSet = pstate.executeQuery();
         pstate.close();
 
-        return ResultSetTool.getCustomersInJsonFormatFromResultSet(resultSet);
+        return CollectorCustomerToJson.getCustomersInJsonFormatFromResultSet(resultSet);
     }
 }

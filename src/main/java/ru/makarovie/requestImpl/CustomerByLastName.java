@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CustomerByLastName extends ResultSetTool{
+public class CustomerByLastName extends CollectorCustomerToJson {
     private static final Connection CONNECTION = JdbcConnector.getConnection();
 
     public static JSONArray getJsonArrayWithData(String lastName){
@@ -28,6 +28,6 @@ public class CustomerByLastName extends ResultSetTool{
 
         ResultSet resultSet = pstate.executeQuery();
         pstate.close();
-        return ResultSetTool.getCustomersInJsonFormatFromResultSet(resultSet);
+        return CollectorCustomerToJson.getCustomersInJsonFormatFromResultSet(resultSet);
     }
 }

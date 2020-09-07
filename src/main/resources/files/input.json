@@ -1,18 +1,4 @@
 {
-  "criterias": [
-    {
-      "lastName": "Петров"
-    },
-    {
-      "productName": "Сахар",
-      "minTimes": 2
-    },
-    {
-      "minExpress": 1000,
-      "maxExpress": 150000
-    },
-    {
-      "badCustomers": "gfdg"
-    }
-  ]
+  "startDate": "2020-09-15",
+  "endDate": "2020-09-04"
 }

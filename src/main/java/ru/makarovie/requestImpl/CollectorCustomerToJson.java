@@ -6,7 +6,7 @@ import org.json.simple.JSONObject;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-abstract class ResultSetTool {
+abstract class CollectorCustomerToJson {
 
     public static JSONArray getCustomersInJsonFormatFromResultSet (ResultSet resultSet) throws SQLException {
         JSONArray resultArray = new JSONArray();
