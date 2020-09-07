@@ -1,0 +1,4 @@
+ru\makarovie\statDbWorker\TotalAndAverageExpensesByPeriod.class
+ru\makarovie\statDbWorker\TotalCostumersExpensesByPeriod.class
+ru\makarovie\statDbWorker\ProductsNameAndCostByDateAndCustomer.class
+ru\makarovie\statDbWorker\DistinctCustomerIdByDate.class
