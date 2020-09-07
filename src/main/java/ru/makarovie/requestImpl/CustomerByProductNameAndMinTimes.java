@@ -8,11 +8,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CustomerByProductNameAndMinTimes {
+public abstract class CustomerByProductNameAndMinTimes {
     private static final Connection CONNECTION = JdbcConnector.getConnection();
 
     public static JSONArray getJsonArrayWithData(String productName, long minTimes) {
-        JSONArray jsonArray = null;
+        JSONArray jsonArray = new JSONArray();
         try {
             jsonArray = getResultSetFromDb(productName, minTimes);
         } catch (SQLException exception) {
@@ -21,7 +21,8 @@ public class CustomerByProductNameAndMinTimes {
         return jsonArray;
     }
 
-    private static JSONArray getResultSetFromDb(String productName, long minTimes) throws SQLException {
+    private static JSONArray getResultSetFromDb(String productName, long minTimes)
+            throws SQLException {
 
         PreparedStatement pstate = CONNECTION.prepareStatement(
                 "SELECT name, second_name FROM customer " +

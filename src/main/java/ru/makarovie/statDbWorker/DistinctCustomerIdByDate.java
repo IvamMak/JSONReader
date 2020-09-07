@@ -1,4 +1,4 @@
-package ru.makarovie.dbWorker;
+package ru.makarovie.statDbWorker;
 
 import ru.makarovie.db.JdbcConnector;
 

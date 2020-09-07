@@ -1,6 +1,7 @@
 package ru.makarovie;
 
 import org.json.simple.JSONObject;
+import ru.makarovie.inputOutput.ConsoleHelper;
 import ru.makarovie.inputOutput.RequestParser;
 import ru.makarovie.inputOutput.ResultWriter;
 import ru.makarovie.requestStrategy.RequestStrategy;
@@ -11,19 +12,25 @@ import java.sql.SQLException;
 
 public class Solution {
     public static void main(String[] args) throws SQLException {
-        RequestStrategy requestStrategy;
+        RequestStrategy requestStrategy = null;
+
+        String typeOfOperation = ConsoleHelper.getTypeOfOperation();
 
         RequestParser requestParser =
-                new RequestParser("src\\main\\resources\\files\\input.json");
+                new RequestParser(ConsoleHelper.getInputFile());
         JSONObject jsonRequest = requestParser.getJsonObjectWithRequest();
 
-        if (jsonRequest.containsKey("startDate") || jsonRequest.containsKey("endDate")) {
+        if (typeOfOperation.equals("stat")) {
             requestStrategy = new StatRequestStrategy(jsonRequest);
-        } else {
+        } else if (typeOfOperation.equals("search")) {
             requestStrategy = new SearchRequestStrategy(jsonRequest);
+        } else {
+            System.out.println("Неверный тип операции (допустимые типы: stat, search)");
         }
 
-        JSONObject jsonObject = requestStrategy.getJsonObjectWithDataFromDb();
-        ResultWriter.writeResult(jsonObject);
+        if (requestStrategy != null) {
+            JSONObject jsonObject = requestStrategy.getJsonObjectWithDataFromDb();
+            ResultWriter.writeResult(jsonObject);
+        }
     }
 }

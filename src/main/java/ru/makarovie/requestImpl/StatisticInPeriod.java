@@ -2,10 +2,10 @@ package ru.makarovie.requestImpl;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import ru.makarovie.dbWorker.DistinctCustomerIdByDate;
-import ru.makarovie.dbWorker.ProductsNameAndCostByDateAndCustomer;
-import ru.makarovie.dbWorker.TotalAndAverageExpensesByPeriod;
-import ru.makarovie.dbWorker.TotalCostumersExpensesByPeriod;
+import ru.makarovie.statDbWorker.DistinctCustomerIdByDate;
+import ru.makarovie.statDbWorker.ProductsNameAndCostByDateAndCustomer;
+import ru.makarovie.statDbWorker.TotalAndAverageExpensesByPeriod;
+import ru.makarovie.statDbWorker.TotalCostumersExpensesByPeriod;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

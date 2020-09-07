@@ -8,11 +8,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class BadCustomerWithLimit {
+public abstract class BadCustomerWithLimit {
     private static final Connection CONNECTION = JdbcConnector.getConnection();
 
     public static JSONArray getJsonArrayWithData(long limit){
-        JSONArray jsonArray = null;
+        JSONArray jsonArray = new JSONArray();
         try {
             jsonArray = getResultSetFromDb(limit);
         } catch (SQLException exception) {

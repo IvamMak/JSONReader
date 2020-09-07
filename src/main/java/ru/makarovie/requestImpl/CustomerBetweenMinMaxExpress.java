@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CustomerBetweenMinMaxExpress {
+public abstract class CustomerBetweenMinMaxExpress {
     private static final Connection CONNECTION = JdbcConnector.getConnection();
 
     public static JSONArray getJsonArrayWithData(long minExpress, long maxExpress){

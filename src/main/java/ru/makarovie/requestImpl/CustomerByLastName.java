@@ -8,11 +8,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class CustomerByLastName extends CollectorCustomerToJson {
+public abstract class CustomerByLastName extends CollectorCustomerToJson {
     private static final Connection CONNECTION = JdbcConnector.getConnection();
 
     public static JSONArray getJsonArrayWithData(String lastName){
-        JSONArray jsonArray = null;
+        JSONArray jsonArray = new JSONArray();
         try {
             jsonArray = getResultSetFromDb(lastName);
         } catch (SQLException exception) {
@@ -23,7 +23,8 @@ public class CustomerByLastName extends CollectorCustomerToJson {
 
     private static JSONArray getResultSetFromDb(String lastName) throws SQLException {
         PreparedStatement pstate =
-                CONNECTION.prepareStatement("SELECT * FROM customer WHERE customer.second_name = ?");
+                CONNECTION.prepareStatement("SELECT * FROM customer " +
+                        "WHERE customer.second_name = ?");
         pstate.setObject(1, lastName);
 
         ResultSet resultSet = pstate.executeQuery();
